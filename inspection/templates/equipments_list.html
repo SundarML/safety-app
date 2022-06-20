@@ -1,0 +1,9 @@
+<ul>
+	{%for object in object_list%}
+	<li><a href="/Details/{{object.eqp_id}}">{{object.eqp_name}}</a></li>
+		
+	<hr/>
+	{% empty %}
+	<li>{no equipments found}</li>
+	{% endfor %}
+</ul>
